@@ -13,4 +13,5 @@ RUN npm run prepublish
 
 CMD [ "npm", "run", "runServer" ]
 
+#Expose Port
 EXPOSE 5000
