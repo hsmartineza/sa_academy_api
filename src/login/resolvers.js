@@ -5,9 +5,9 @@ const URL = `http://${url}:${port}/${entryPoint}`;
 
 const resolvers = {
 	Mutation: {
-		logStudent: (_, { student }) =>
-			generalRequest(`${URL}`, 'POST', student),
+		logStudent: (_, { log }) =>
+			generalRequest(`${URL}`, 'POST', log),
 	}
 };
 
-export default resolvers;
+export default resolvers;		

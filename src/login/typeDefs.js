@@ -1,15 +1,15 @@
 export const loginTypeDef = `
-type Student {
+type Log {
     code: Int!
     username: String!
     password: String!
 }
-input StudentInput {
+input LogInput {
     username: String!
     password: String!
 }`;
 
 
 export const loginMutations = `
-    logStudent(student: StudentInput!): Student!
+    logStudent(log: LogInput!): Log!
 `;
