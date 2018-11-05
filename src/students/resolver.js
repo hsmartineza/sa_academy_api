@@ -13,7 +13,7 @@ const resolvers = {
 	Mutation: {
 		createStudent: (_, { student }) =>
 			generalRequest(`${URL}`, 'POST', student),
-		updateStudent: (_, { code, course }) =>
+		updateStudent: (_, { code, student }) =>
 			generalRequest(`${URL}/${code}`, 'PUT', student),
 		deleteStudent: (_, { code }) =>
 			generalRequest(`${URL}/${code}`, 'DELETE')
