@@ -11,5 +11,5 @@ input LogInput {
 
 
 export const loginMutations = `
-    logStudent(log: LogInput!): Log!
+    logStudent(log: LogInput!): String
 `;
