@@ -11,5 +11,8 @@ services:
       STUDENTS_URL: '192.168.99.101'
       STUDENTS_PORT: '3001'
       STUDENTS_ENTRY: 'students-ms/resources/students'
+      LOGIN_URL: '192.168.99.101'
+      LOGIN_PORT: '3001'
+      LOGIN_ENTRY: 'students-ms/resources/auth'
     ports:
       - '5000:5000'
