@@ -15,7 +15,7 @@ export const studentsQueries = `
 `;
 
 export const studentsMutations = `
-    createStudent(student: StudentInput!): Student!
+    createStudent(student: StudentInput!): String
     deleteStudent(code: Int!): Int
     updateStudent(code: Int!, student: StudentInput!): Student!
 `;

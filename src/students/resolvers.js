@@ -10,7 +10,7 @@ const resolvers = {
 		studentByCode: (_, { code }) =>
 			generalRequest(`${URL}/${code}`, 'GET'),
 	},
-	Mutation: {
+	Mutation: {	
 		createStudent: (_, { student }) =>
 			generalRequest(`${URL}`, 'POST', student),
 		updateStudent: (_, { code, student }) =>
