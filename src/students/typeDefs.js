@@ -9,12 +9,12 @@ input StudentInput {
     password: String!
 }`;
 
-export const coursesQueries = `
+export const studentsQueries = `
     allStudents: [Student]!
     studentByCode(code: Int!): Student!
 `;
 
-export const coursesMutations = `
+export const studentsMutations = `
     createStudent(student: StudentInput!): Student!
     deleteStudent(code: Int!): Int
     updateStudent(code: Int!, student: StudentInput!): Student!
